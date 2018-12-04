@@ -85,7 +85,7 @@
 
 
       <!-- START THE FEATURETTES -->
-{% if my_html %}
+
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -101,7 +101,7 @@
 		</form>	
         </div>
       </div>
-	 
+	 {% if my_html %}
       <hr class="featurette-divider">
       <div classs='col-md-7'>
       <div class="bootstrap-iso>
@@ -111,7 +111,8 @@
             {% endautoescape %}
         </div>
     	</div>
-{% endif %}
+	
+	{% endif %}
 <!--
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
