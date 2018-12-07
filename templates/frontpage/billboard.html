@@ -6,28 +6,21 @@
 
 <div class ='container' style="margin-top:50px">
 	<div class ='jumbotron'>
-		<h1>Billboard Data</h1>
-		<h2>Demo</h2>
+		<h1>DS-1001 Term Project</h1>
+		<h2>Contribution</h2>
+<ul class='list-group'>
+	<li class='list-group-item'>Bofei Zhang: scraped data from Spotify; merged and cleaned dataset;selected top features and set up models; parameter tuning; tested models in LIME; published project DEMO
+	</li>
+	<li class='list-group-item'>Shaoling Chen: crawled lyrics from Genius and extracted data from Billboard;merged and cleaned data; descriptive statistics; sentiment analysis
+	</li>
+	<li class='list-group-item'>Ziyu Lei: topic modelling by LDA; helped with lyrics crawling from Genius; helped with model selection;helped with final write-up drafting
+	</li>
+	<li class='list-group-item'>Zian Chen: did research in Topic Modelling and LIME; embedded data visualization;helped with lyrics crawling;drafted final write-up
+	</li>
+</ul>
 	</div>
-	
-	{% render_table table %}
-</div>
 
-<div class='container'>
-	<label for='lyrics'>Input your lyrics:</label>
-	<form method="post" id="lyrics">
-	{{ form.as_p }}
-	{% csrf_token %}
-	<input type="submit" name="btn btn-primary" value="Submit">
-	</form>	
-</div>
 
-<div class='container'>
-{% if positive %}
-	<p>
-	The lyrics has {{ positive }} probability to be on the billboard.
-	</p>
-{% endif %}
 </div>
 
 {% endblock %}
