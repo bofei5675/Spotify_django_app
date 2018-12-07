@@ -16,9 +16,9 @@
           <img class="first-slide" src="{% static "images/fig1.jpg" %}" alt="First slide">
           <div class="container" id="first-cover">
             <div class="carousel-caption">
-              <h1>Spotify Streaming Trend</h1>
-              <p> Audio features + Artist Information + Track Information + Album Information</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+              <h1>What makes a certain hip-hop song a hit?</h1>
+              <p> We used web crawler and API to collect music data from Spotify, Genius, and Billboard</p>
+              <p><a class="btn btn-lg btn-primary" href="{% url 'billboard' %}" role="button">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -26,9 +26,9 @@
           <img class="second-slide" src="{% static "images/fig2.jpg" %}" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Genius API</h1>
-              <p>Song lyrics -------------- NLP</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1>s there any similarity shared by theseBillboard winners over time?</h1>
+              <p>We have built multiple machine learning model to make a prediction based on lyrics and audio features</p>
+              <p><a class="btn btn-lg btn-primary" href="{% url 'billboard' %}" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -36,9 +36,9 @@
           <img class="third-slide" src="{% static "images/fig3.jpg" %}" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Billboard Classifier</h1>
-              <p> Audio Features + Song Lyrics = if this song could be on Billboard?</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1>How can NLP be used on lyrics? </h1>
+              <p> We have applied sentiment analysis and topic modeling on lyrics.</p>
+              <p><a class="btn btn-lg btn-primary" href="{% url 'billboard' %}" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
